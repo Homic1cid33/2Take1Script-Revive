@@ -1,8 +1,10 @@
 # 2Take1Script Revive
 
+#### I removed the code from the github repo because people apparently dont have enough IQ to go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) and instead download the code directly which causes issues..
+
 2Take1Script Revive is the offical fix for the 2Take1Script, a script made by [**haekkzer**](https://github.com/haekkzer/) who discontinued it and allowed me to take it over
 
-> Big Thanks to Proddy and haekkzer himself who teached me some stuff about lua and helped me with issues!
+> Big Thanks to Wolfry, Proddy and haekkzer himself who teached me some stuff about lua and helped me with issues!
 > 
 > - Thanks to Kektram for (more or less) allowing me to steal 2 globals
 
@@ -17,7 +19,7 @@
 
 ## Setup
 
-Download the latest script release from this git-repo [**download**](https://github.com/DemonKiya/2Take1Script-Revive/releases). The script comes in a `2Take1Script_Revive.zip` file.
+Download the latest script release from this git-repo [**here**](https://github.com/DemonKiya/2Take1Script-Revive/releases). The script comes in a `2Take1Script_Revive.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://gta.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -33,6 +35,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 
 ### Online Players
 
+- Add to Fake Friends (with different options enabled)
 - Unmark Modder
 - Waypoint Player
 - TP to Player
@@ -48,9 +51,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Attach Entity from Aim
   - Clear Entities
   - Custom Attachments
-- Lag Area with Vehicles
-  - Select from a custom list of Vehicles to lag the area
-  - Delete Vehicles
 - Log Events
   - Log Script Events
   - Reset Script Event Log
@@ -61,15 +61,15 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
   - Give Bounty (Custom Input, Anonymous or Named)
-  - Send Player to Island
-  - Block - Passive
-  - Unblock - Passive
-  - Send Player to Mission
+  - Force Player to Island
+  - Force Player to Mission
   - CEO
     - Ban
     - Dismiss
     - Terminate
-- Send PEDs (Assassins)
+  - Block - Passive
+  - Unblock - Passive
+- Send PED Assassins
   - Clear PEDs
   - Send PEDs from a custom list
 - Send SMSs to Player
@@ -82,28 +82,26 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Apply random Force to Player
   - Trap in Prison
   - Trap in invisible Cage
-- Kick Player
-- Crash Player
+- Malicious
+  - Vehicle Spam
+    - Select from a custom list of Vehicles to lag the area
+    - Delete Vehicles
+  - Script Event Kick
+  - Script Event Crash
+  - Invalid Ped Crashes
+    - Slod Human
+    - Slod Large Quadped
+    - Slod Small Quadped
 
 ### Player Options
 
 - Random Clothes
 - Force Police Outfit
-- Health
-  - Fill Health
-  - Undead OTR
-  - Unlimited health-regen!
-  - Revert health after disabling Unlimited-regen
-  - Health Boosts
-    - Max Online Health: 328
-    - Health: 100
-    - Health: 500
-    - Freemode Beast: 2500
-    - Health: 10000
-    - Health: 25000
-    - Health: 50000
-    - Health: 100000
-    - Health: 5000000
+- Fill Health
+- Set Health (Input)
+- Undead OTR
+- Unlimited health-regen!
+- Revert health after disabling Unlimited-regen
 - Ragdoll
 - Ragdoll-Toggle
 - Aim Protection
@@ -111,10 +109,11 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Anonymous Punishment
   - Ragdoll Player
   - Set on Fire
-  - Kill Player
+  - Explode
   - Remove Current Weapon
-  - Kick Player
   - Electrocute Player
+  - Kick Player
+  - Crash Player
 - Bodyguards
   - Godmode for Bodyguards
   - Set Health of Bodyguards (100-50000)
@@ -129,12 +128,12 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Activate Block Vehicles
   - Select from currently 16 blockable Vehicles
 - Block Areas with Objects
-  - Teleport to Block Location (see [note 3](#notes))
+  - Teleport to Block Location
   - Block LSCs
   - Casino
   - Maze Bank
   - Custom Locations
-- Explosion Features (see [note 4](#notes))
+- Explosion Features
   - Laser Beam Explode Waypoint
   - Random Explosions
     - Select Explosion Type
@@ -142,9 +141,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Chat Features
   - Echo Chat X times
   - Ultra Spammer
-  - Punish Money Beggers (see [note 6](#notes))
+  - Punish Money Beggers
   - Enable Chat-Commands
-  - Chat-Commands (see [note 7](#notes))
+  - Chat-Commands
     - `!explode <playername>`
     - `!explodeall` \[SU\]
     - `!kick <playername>`
@@ -163,24 +162,23 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Delete Vehicles from `!lag`
   - Chat Commands for Friends
   - Chat Commands Everyone
-- Kill all PEDs
 - Vehicles
   - Disable Control from near Vehicles
   - Modify Vehicle Speeds (-500 - 1000)
   - Reset Modifies
   - Include Self & Friends
   - Overwrite default Speedlimit
-- Bounty
-  - Set Bounty after Death Value (0 - 10000$)
-  - Give Bounty after Death Toggle (Anonymous or Named)
-  - Give Bounty (Custom Input, Anonymous or Named)
 - Script Events
   - Custom Script Events
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
-  - Send all to Island
-  - Send all to Mission
-  - CEO all Player
+  - Bounty
+    - Set Bounty after Death Value (0 - 10000$)
+    - Give Bounty after Death Toggle (Anonymous or Named)
+    - Give Bounty (Custom Input, Anonymous or Named)
+  - Force to Island
+  - Force to Mission
+  - CEO Options
     - Ban
     - Dismiss
     - Terminate
@@ -191,10 +189,27 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Custom SMS input
   - Send SCIDs & IPs
   - Send SMS from a custom presaved list
+- Notify Script Host Migrations
+- Notify Session Host Migrations
+- Player History
+    - Store info in each Lobby subcategory
+      - Lobby info
+        - Shows number of logged Players
+        - Hide Lobby from History
+      - Players
+        - NAME / Copy
+        - SCID / Copy
+        - IP / Copy
+        - PlayerID
+        - First Seen
+        - Add to Blacklist
+        - Add to Remember Modder
+        - Copy Outfit
+        - Is `<name>` in this lobby?
+        - Were they a modder?
 - Malicious
   - Karma every Script Event
   - Kick Hosts until You become Host
-  - Punish Aliens in Lobby
   - Punish if Russki Char is typed
   - Geo-Block China
   - Kick Session
@@ -204,10 +219,11 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 
 ### Vehicle Options
 
-- Teleport Own Vehicle to me
-- Teleport Own Vehicle to me and drive
-- Drive Own Vehicle
-- Teleport to Own Vehicle
+- Personal Vehicle
+  - Teleport Personal Vehicle to me
+  - Teleport Personal Vehicle to me and drive
+  - Drive Personal Vehicle
+  - Teleport to Personal Vehicle
 - Always apply Vehicle Mods
 - Vehicle Colors
   - Set Speed in Milliseconds
@@ -244,6 +260,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - License Plate Speedometer (see [note 10](#notes))
 - No collision
 - Auto Repair Vehicle
+- Swap Vehicle Seat
 - Custom Vehicles
   - Moveable Robot
     - Enable Robot
@@ -324,12 +341,10 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Drive/Walk this Height
 - Weird Entity
 - Real Time (Clientside)
-- Gameplay Clear Area
-- Clear Area
 - Auto Teleport to Waypoint
+- Kill nearby PEDs
+- Auto-Hostkick-Yourself
 - Fake Ban Screen
-- 500K Stealth Recovery
-- Swap Vehicle Seat
 - Stats
   - Reset Orbital-Cannon Cooldown
   - Disable Orbital-Cannon Cooldown
@@ -359,32 +374,17 @@ If you have a problem loading this script, have a look [**here**](#common-questi
       - Scan Card Level
       - Mask Variation
       - Confirm Second Board
-  - Player History
-    - Store info in each Lobby subcategory
-      - Lobby info
-        - Shows number of logged Players
-        - Hide Lobby from History
-      - Players
-        - NAME / Copy
-        - SCID / Copy
-        - IP / Copy
-        - PlayerID
-        - First Seen
-        - Add to Blacklist
-        - Add to Remember Modder
-        - Copy Outfit
-        - Is `<name>` in this lobby?
-        - Were they a modder?
 
 ### Utility
 
 - Delete Custom Outfits
 - Delete Custom Vehicles
+- Gameplay Clear Area
+- Clear Area
+- Get Current Coords
 - Leave-Session
-- Auto Host Kick Yourself Toggle
 - Delete Entity From Aim
 - Get input Hash key
-- Notify & Print String from File
 - Print Info from Entity @Aim to File
 - Console (requires lua debug console)
   - Log Console output to File
@@ -416,13 +416,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Hotkey Notifications
   - Print active Hotkeys
   - Overwrite / Update File - `Hotkeys.ini`
-- Menu-Wide-Hotkeys
-  - Menu-Wide Hotkey Notifications
-  - Exclude Navigation Keys
-  - Exclude NoClip Keys
-  - Exclude EditorRotation Keys
-  - Exclude Keys from File
-  - Reload `2Take1Exclude.ini`
 - Exclude Friends from Harmful Lobby Events
 - Attached Entitys No Collision
 - Continuously Assassin Peds
@@ -459,10 +452,10 @@ local array = {
 
 ### Custom Script Events
 
-Edit the `_2t1s_se_custom` global variable.
+Edit the `custom_script_events` global variable.
 
 ```lua
-_2t1s_se_custom = {
+custom_script_events = {
     {"Custom Script Event 1", {
         {0xffffffff, {0, 0, 0}},
         {0xffffffff, {0, 0, 0}},
@@ -477,10 +470,10 @@ _2t1s_se_custom = {
 
 ### Attacker / Assassin PEDs
 
-Edit the `_2t1s_ped_assassins` global variable. If you dont provide a weapon hash, the peds weapon will be a Combat MG Mk II
+Edit the `ped_assassins` global variable. If you dont provide a weapon hash, the peds weapon will be a Combat MG Mk II
 
 ```lua
-_2t1s_ped_assassins = {
+ped_assassins = {
 --  {"Attacker Name", ped_Hash, ped_Type, weapon_Hash(optional)},
     {"Cop", 0x5E3DA4A4, 6, 0x1D073A89},
     {"FIB", 0x5CDEF405, 6, 0x2BE6766B},
@@ -491,10 +484,10 @@ _2t1s_ped_assassins = {
 
 ### Punish Money Beggers
 
-Edit the `_2t1s_begger_texts` global variable.
+Edit the `begger_texts` global variable.
 
 ```lua
-_2t1s_begger_texts = {
+begger_texts = {
 --  "Beg String 1", "Beg String 2, "Beg String 3", "...",
     "money please", "gib mal money hier", "any money dropper", "money dropper anyone?"
 }
@@ -502,14 +495,14 @@ _2t1s_begger_texts = {
 
 ### License Plate Speedometer
 
-Edit the `_2t1s_speedometer_units` global variable.
+Edit the `speedometer_units` global variable.
 
 2Take1Script will convert from **meters per second** to the desired unit. Because of this, you need the **multiply factor** that will be applied in the conversion.
 
 Don't forget to leave a blank space before the short name, otherwise the speed won't be displayed properly.
 
 ```lua
-_2t1s_speedometer_units = {
+speedometer_units = {
 --  {" Short Unit", mply_Factor, "Long Unit"},
     {" MPS", 1, "Meter per Second"},
     {" MPH", 2.23694, "Miles per Hour"},
@@ -522,7 +515,7 @@ _2t1s_speedometer_units = {
 
 ### Block Custom Areas
 
-Edit the `_2t1s_block_custom` global variable.
+Edit the `block_custom` global variable.
 
 The last line of each custom location will add a **Teleporting Position**.
 
@@ -538,7 +531,7 @@ To do this, instead of typing the exact coordinates as shown above, use the foll
 And always remember, **the first value has to be the smaller one**.
 
 ```lua
-_2t1s_block_custom = {
+block_custom = {
 --  {"Example", {
 --      {hash, {pos X, Y, Z}, {rot X, Y, Z}, bool_Freeze, bool_Invisible},
 --      {false, {teleport_Pos X, Y, Z}, float_Heading},
@@ -561,12 +554,12 @@ _2t1s_block_custom = {
 
 ### Custom Attachments
 
-Edit the `_2t1s_custom_attachments` global variable.
+Edit the `custom_attachments` global variable.
 
 Each attachment can be made of many entities; you only have to add more entity identifiers.
 
 ```lua
-_2t1s_custom_attachments = {
+custom_attachments = {
 --    {"Name", {
 --      {hash, bone_ID, {pos X, Y, Z}, {rot X, Y, Z}, bool_Invisible},
 --      }, },
@@ -589,7 +582,7 @@ The third example, "Cat Cap", uses a **ped hash**.
 
 ### New Custom Vehicles
 
-Edit the `_2t1s_custom_vehicles` global variable.
+Edit the `custom_vehicles` global variable.
 
 This is the most complicated part of the Lua, but let's take it step by step.
 
@@ -632,7 +625,7 @@ Setting the starting vehicle's hash to `0` will check if you're in a vehicle and
 If that's the case, your current vehicle will become the "base", on which the rest of the entities will be attached.
 
 ```lua
-_2t1s_custom_vehicles = {
+custom_vehicles = {
 --  {"Name", {
 --      {hash1, hash2, hash3, ...}
 --      {hash, {pos X, Y, Z}, {rot X, Y, Z}, {primary_Color, secondary_Color, pearlescent, wheel, window}, bool_Invisible, int_SpawnHeight, int_BoneIndex, int_AttachToEntity, ped_Hash, bool_NoCollision, int_Offset, int_OffsetZPreview, int_Alpha},
@@ -652,12 +645,12 @@ _2t1s_custom_vehicles = {
 }
 ```
 
-### Vehicle Lag Area
+### Vehicle Spam
 
-Edit the `_2t1s_vehicle_lag_area` global variable.
+Edit the `vehicle_spam` global variable.
 
 ```lua
-_2t1s_vehicle_lag_area = {
+vehicle_spam = {
 --  {"Name", Hash},
     {"Cargoplanes", 0x15F27762},
     {"Volatols", 0x1AAD0DED},
@@ -666,10 +659,10 @@ _2t1s_vehicle_lag_area = {
 
 ### SMS List
 
-Edit the `_2t1s_sms_texts` global variable.
+Edit the `sms_texts` global variable.
 
 ```lua
-_2t1s_sms_texts = {
+sms_texts = {
 --  "Message 1", "Message 2", "Message 3", "..."
     "Fucking bitch", "REKT", "NOOB", "GET ON MY LEVEL", "Send Nudes", "UR MOM GAY"
 }
@@ -677,10 +670,10 @@ _2t1s_sms_texts = {
 
 ### Load Weapons
 
-Edit the `_2t1s_weapons` global variable.
+Edit the `weapons` global variable.
 
 ```lua
-_2t1s_weapons = {
+weapons = {
 --  {weapon_Hash, attachment1_Hash, attachment2_Hash, attachment3_Hash, ...},
     {0x1B06D571, 0xD7391086},
     {0x22D8FE39, 0x249A17D5, 0x359B7AAE, 0xC304849A, 0x9B76C72C},
