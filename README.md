@@ -1,4 +1,4 @@
-# 2Take1Script Revive
+# 2Take1Script Revive (Yes, im still alive. Update coming soon)
 
 #### I removed the code from the github repo because people apparently dont have enough IQ to go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) and instead download the code directly which causes issues..
 
