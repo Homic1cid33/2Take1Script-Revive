@@ -1,12 +1,11 @@
-# 2Take1Script Revive (Yes, im still alive. Update coming soon)
+# 2Take1Script
+
+The offical continued version of the 2Take1Script, a script made by [**haekkzer**](https://github.com/haekkzer/) who abandoned it and allowed me to take over
 
 #### I removed the code from the github repo because people apparently dont have enough IQ to go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) and instead download the code directly which causes issues..
 
-2Take1Script Revive is the offical fix for the 2Take1Script, a script made by [**haekkzer**](https://github.com/haekkzer/) who discontinued it and allowed me to take it over
+> Big Thanks Proddy and haekkzer himself who teached me some stuff about lua and helped me with issues!
 
-> Big Thanks to Wolfry, Proddy and haekkzer himself who teached me some stuff about lua and helped me with issues!
-> 
-> - Thanks to Kektram for (more or less) allowing me to steal 2 globals
 
 ### Table of Contents
 
@@ -19,15 +18,15 @@
 
 ## Setup
 
-Download the latest script release from this git-repo [**here**](https://github.com/DemonKiya/2Take1Script-Revive/releases). The script comes in a `2Take1Script_Revive.zip` file.
+Download the latest script release from this git-repo [**here**](https://github.com/DemonKiya/2Take1Script-Revive/releases). The script comes in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://gta.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
 
-- `2Take1Script_Revive.lua` (main script)
-- `2Take1Script_Revive\` (folder with additional assets)
+- `2Take1Script.lua` (main script)
+- `2Take1Script\` (folder with additional assets)
 
-Once all the above is done, you can straight go to [**Scripts**](https://gta.2take1.menu/features/local/scripts) and select **2Take1Script_Revive.lua**.
+Once all the above is done, you can straight go to [**Scripts**](https://gta.2take1.menu/features/local/scripts) and select **2Take1Script.lua**.
 
 If you have a problem loading this script, have a look [**here**](#common-questions).
 
@@ -39,14 +38,23 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Unmark Modder
 - Waypoint Player
 - TP to Player
-- TP Players Vehicle to me
-- Ragdoll Player
 - Vehicle Options
   - Remote Controll Vehicle
+  - Vehicle Kick (Quick/Gentle)
+  - Trap in Vehicle (Set on Fire/Drown Underwater)
+  - Teleport Player Vehicle (To Me/Underground/Ocean/Custom Coords)
   - Repair Vehicle
   - Vehicle Godmode (Give and Remove)
-  - Kick from Vehicle
   - Modify Speed (0-500)
+  - Apply Random Force
+- Griefing Options
+  - Radiation Lags
+  - Face Fuck
+  - Ragdoll Player (v1/v2)
+  - Falling Asteroids
+  - Delete Asteroids
+  - Trap in Stunt Tube (Visible/Invisible)
+  - Trap in Cage (Visible/Invisible)
 - Attach Objects
   - Attach Entity from Aim
   - Clear Entities
@@ -61,161 +69,70 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
   - Give Bounty (Custom Input, Anonymous or Named)
-  - Force Player to Island
-  - Force Player to Mission
-  - CEO
-    - Ban
-    - Dismiss
-    - Terminate
-  - Block - Passive
-  - Unblock - Passive
+  - Force to Island
+  - Force to Mission (Several Missions Selectable)
+  - CEO Options (Demiss/Terminate/Ban)
+  - Passive Mode (Block/Unblock)
 - Send PED Assassins
+  - Attack Continuously
+  - Godemode Assassins
+  - Amount of Assassins (1-30)
   - Clear PEDs
-  - Send PEDs from a custom list
-- Send SMSs to Player
+  - Send Assassins (Custom Input)
+  - Send Assassins from a custom list
+- SMS Spam
+  - Spam Delay
   - Custom SMS input
-  - Send his SCID & IP
+  - Send their SCID & IP
   - Send SMS from a custom presaved list
-- Miscellaneous
-  - Falling Asteroids
-  - Delete Asteroids
-  - Apply random Force to Player
-  - Trap in Prison
-  - Trap in invisible Cage
 - Malicious
-  - Vehicle Spam
-    - Select from a custom list of Vehicles to lag the area
-    - Delete Vehicles
-  - Script Event Kick
-  - Script Event Crash
-  - Invalid Ped Crashes
-    - Slod Human
-    - Slod Large Quadped
-    - Slod Small Quadped
+  - Basic Kick
+  - Basic Crash
+  - Entity Spam (PEDs/Vehicles)
+    - Amount of Entites
+    - Enable Automatic Cleanup
+    - Delete Entities
+    - Spam Entities (Custom Input)
+    - Spam Entities (Presets)
+  - Big Dick Crash
+  - World Object Crashes (1-2)
+  - Invalid Ped Crashes (1-3)
 
 ### Player Options
 
 - Random Clothes
 - Force Police Outfit
-- Fill Health
-- Set Health (Input)
-- Undead OTR
-- Unlimited health-regen!
-- Revert health after disabling Unlimited-regen
-- Ragdoll
-- Ragdoll-Toggle
+- Health Modifier
+  - Fill Health
+  - Quick Regeneration
+  - Set Health (Input)
+  - Unlimited Health regeneration
+  - Revert health after disabling Health regeneration
+  - Undead OTR
+- Ragdoll Self
+- Ragdoll Self (Loop)
 - Aim Protection
   - Enable Aim Protection
   - Anonymous Punishment
-  - Ragdoll Player
+  - Freeze
+  - Ragdoll
   - Set on Fire
   - Explode
-  - Remove Current Weapon
-  - Electrocute Player
-  - Kick Player
-  - Crash Player
+  - Remove Weapon
+  - Electrocute
+  - Kick
+  - Crash
 - Bodyguards
-  - Godmode for Bodyguards
-  - Set Health of Bodyguards (100-50000)
-  - Equip Bodyguards with MG
-  - Set Formation
-  - Set Number
+  - Godmode Bodyguards
+  - Add Map Marker for Bodygaurds
+  - Bodyguards Health (100-1000000)
+  - Bodyguard Type (Presets)
+  - Primary Weapon (Presets)
+  - Secondary Weapon (Presets)
+  - Max Distance to Player
+  - Formation
+  - Amount of Bodyguards (1-7)
   - Enable Bodyguards
-
-### Lobby
-
-- Block Vehicles
-  - Activate Block Vehicles
-  - Select from currently 16 blockable Vehicles
-- Block Areas with Objects
-  - Teleport to Block Location
-  - Block LSCs
-  - Casino
-  - Maze Bank
-  - Custom Locations
-- Explosion Features
-  - Laser Beam Explode Waypoint
-  - Random Explosions
-    - Select Explosion Type
-  - Shake Cam
-- Chat Features
-  - Echo Chat X times
-  - Ultra Spammer
-  - Punish Money Beggers
-  - Enable Chat-Commands
-  - Chat-Commands
-    - `!explode <playername>`
-    - `!explodeall` \[SU\]
-    - `!kick <playername>`
-    - `!kickall` \[SU\]
-    - `!crash <playername>`   \[SU\]
-    - `!crashall` \[SU\]
-    - `!lag <playername>`
-    - `!trap <playername>`
-    - `!tp <playername>`   \[SU\]
-    - `!clearwanted` \[NOT SU\]
-    - `!vehicle <name>`
-    - `!bigpp <playername>`
-    - `!bigppall`   \[SU\]
-    - `!vehiclegod <on/off>`
-    - `!weaponsall`
-  - Delete Vehicles from `!lag`
-  - Chat Commands for Friends
-  - Chat Commands Everyone
-- Vehicles
-  - Disable Control from near Vehicles
-  - Modify Vehicle Speeds (-500 - 1000)
-  - Reset Modifies
-  - Include Self & Friends
-  - Overwrite default Speedlimit
-- Script Events
-  - Custom Script Events
-    - Enter Custom Script Event with Parameters
-    - Send Script Events from a Custom presaved list
-  - Bounty
-    - Set Bounty after Death Value (0 - 10000$)
-    - Give Bounty after Death Toggle (Anonymous or Named)
-    - Give Bounty (Custom Input, Anonymous or Named)
-  - Force to Island
-  - Force to Mission
-  - CEO Options
-    - Ban
-    - Dismiss
-    - Terminate
-  - Block Passive Mode
-  - Unblock Passive Mode
-- Send SMSs to Lobby
-  - Spam SMS X Times
-  - Custom SMS input
-  - Send SCIDs & IPs
-  - Send SMS from a custom presaved list
-- Notify Script Host Migrations
-- Notify Session Host Migrations
-- Player History
-    - Store info in each Lobby subcategory
-      - Lobby info
-        - Shows number of logged Players
-        - Hide Lobby from History
-      - Players
-        - NAME / Copy
-        - SCID / Copy
-        - IP / Copy
-        - PlayerID
-        - First Seen
-        - Add to Blacklist
-        - Add to Remember Modder
-        - Copy Outfit
-        - Is `<name>` in this lobby?
-        - Were they a modder?
-- Malicious
-  - Karma every Script Event
-  - Kick Hosts until You become Host
-  - Punish if Russki Char is typed
-  - Geo-Block China
-  - Kick Session
-  - Crash Session (SE)
-  - Crash Session
-  - Fix loading screen after Crash
 
 ### Vehicle Options
 
@@ -241,9 +158,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Rainbow Neon Lights
     - Rainbow Smoke
     - Rainbow Xenon
-  - Synced Random Colors
-  - Synced Rainbow Colors
-  - Synced Smooth Rainbow
+  - Synced Colors (Random/Rainbow/Smooth Rainbow)
   - 100% Black
   - 100% Black-Toggle
   - Fade Black-Red
@@ -257,10 +172,11 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Enable Horn for Player
 - Set Heli Blades Speed 0-100%
 - Boost Vehicle
-- License Plate Speedometer (see [note 10](#notes))
+- License Plate Speedometer (MPH/KMH)
 - No collision
 - Auto Repair Vehicle
 - Swap Vehicle Seat
+- Delete Current Vehicle
 - Custom Vehicles
   - Moveable Robot
     - Enable Robot
@@ -291,6 +207,107 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Revert back Outfit
   - Fix endless loading Screen
 
+### Lobby
+
+- Block Areas with Objects
+  - Teleport to Block Location
+  - Block LSCs
+  - Casino
+  - Maze Bank
+- Griefing
+  - Blame Player for Explosion Kills (ID)
+  - Set Explosions Invisible
+  - Set Explosions Silent
+  - Explode Lobby (Explosion Type Input)
+  - Explode Lobby
+  - Set Lobby on Fire
+  - Orbital Cannon Spam
+  - Water Hydrant Spam
+  - Freeze Lobby
+- Communication
+  - Chat-Commands
+    - Enable Chat-Commands (Friends/Everyone)
+    - Delete Vehicles from `!lag`
+    - `!explode <playername>`
+    - `!explodeall` \[SU\]
+    - `!kick <playername>`
+    - `!kickall` \[SU\]
+    - `!crash <playername>`   \[SU\]
+    - `!crashall` \[SU\]
+    - `!lag <playername>`
+    - `!trap <playername>`
+    - `!tp <playername>`   \[SU\]
+    - `!clearwanted` \[NOT SU\]
+    - `!vehicle <name>`
+    - `!bigpp <playername>`
+    - `!bigppall`   \[SU\]
+    - `!vehiclegod <on/off>`
+    - `!weaponsall`
+  - Chat Spam
+    - Spam Delay
+    - Chat Spam (Input)
+    - Echo Chat X Times (1-10)
+  - SMS Spam
+    - Spam Delay
+    - SMS Spam (Input)
+    - Send their SCID & IP
+    - SMS Spam (Presets)
+- Vehicles
+  - Vehicle Blacklist
+    - Block Vehicles
+    - Activate Block Vehicles
+    - Select from currently 16 blockable Vehicles
+  - Vehicle Kick (Quick/Gentle)
+  - Disable Control from near Vehicles
+  - Modify Vehicle Speeds (-500 - 1000)
+  - Reset Modifies
+  - Include Self & Friends
+  - Overwrite default Speedlimit
+- Script Events
+  - Custom Script Events
+    - Enter Custom Script Event with Parameters
+    - Send Script Events from a Custom presaved list
+  - Bounty
+    - Set Bounty after Death Value (0 - 10000$)
+    - Give Bounty after Death Toggle (Anonymous or Named)
+    - Give Bounty (Custom Input, Anonymous or Named)
+  - Force to Island
+  - Force to Mission (Several Missions Selectable)
+  - CEO Options (Demiss/Terminate/Ban)
+  - Passive Mode (Block/Unblock)
+- Miscellaneous
+  - Laser Beam Explode Waypoint
+  - Random Explosions (selectable explosion type)
+  - Shake Cam
+  - Kill nearby PEDs
+  - Notify Script Host Migrations
+  - Notify Session Host Migrations
+- Malicious
+  - Karma every Script Event
+  - Force Host
+  - Punish Money Beggers
+  - Punish Russian Speakers (Kick/Crash/Explode)
+  - Geo-Block China
+  - Kick Session
+  - Crash Session (1-2)
+  - Fix loading screen after Crash
+- Player History
+    - Store info in each Lobby subcategory
+      - Lobby info
+        - Shows number of logged Players
+        - Hide Lobby from History
+      - Players
+        - NAME / Copy
+        - SCID / Copy
+        - IP / Copy
+        - PlayerID
+        - First Seen
+        - Add to Blacklist
+        - Add to Remember Modder
+        - Copy Outfit
+        - Is `<name>` in this lobby?
+        - Were they a modder?
+
 ### Weapon Options
 
 - Load Weapons
@@ -304,7 +321,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Select Objects from a list
   - Delete Gun
   - Kick Gun
-  - Give Demi-God for Player
   - Model Gun
     - Standard Model Gun (PEDs)
     - Add Objects and Vehicles to Model Gun
@@ -342,7 +358,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Weird Entity
 - Real Time (Clientside)
 - Auto Teleport to Waypoint
-- Kill nearby PEDs
 - Auto-Hostkick-Yourself
 - Fake Ban Screen
 - Stats
@@ -381,13 +396,18 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Delete Custom Vehicles
 - Gameplay Clear Area
 - Clear Area
+  - Clear Distance
+  - Clear Area of Cops
+  - Clear Area of PEDs
+  - Clear Area of Vehicles
+  - Clear Area of Objects
+  - Clear Everything
 - Get Current Coords
 - Leave-Session
 - Delete Entity From Aim
 - Get input Hash key
 - Print Info from Entity @Aim to File
 - Console (requires lua debug console)
-  - Log Console output to File
   - Print 2T1Script log to console
   - Print Chat log to console
   - Print joining Players to console
@@ -412,14 +432,12 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 
 - Hotkey Settings
   - Enable Hotkeys
-  - Reload 2Take1Hotkeys.ini
   - Hotkey Notifications
+  - Create Hotkeys.ini
+  - Reload Hotkeys.ini
   - Print active Hotkeys
-  - Overwrite / Update File - `Hotkeys.ini`
 - Exclude Friends from Harmful Lobby Events
 - Attached Entitys No Collision
-- Continuously Assassin Peds
-- Spawn PED Assassins Immortal
 - Disable Player-History
 - 2Take1Script Parent
 - Save Configuration
@@ -468,7 +486,7 @@ custom_script_events = {
 }
 ```
 
-### Attacker / Assassin PEDs
+### PED Assassins
 
 Edit the `ped_assassins` global variable. If you dont provide a weapon hash, the peds weapon will be a Combat MG Mk II
 
@@ -482,73 +500,15 @@ ped_assassins = {
 }
 ```
 
-### Punish Money Beggers
+### Shoot Objects
 
-Edit the `begger_texts` global variable.
-
-```lua
-begger_texts = {
---  "Beg String 1", "Beg String 2, "Beg String 3", "...",
-    "money please", "gib mal money hier", "any money dropper", "money dropper anyone?"
-}
-```
-
-### License Plate Speedometer
-
-Edit the `speedometer_units` global variable.
-
-2Take1Script will convert from **meters per second** to the desired unit. Because of this, you need the **multiply factor** that will be applied in the conversion.
-
-Don't forget to leave a blank space before the short name, otherwise the speed won't be displayed properly.
+Edit the `shoot_entitys` global variable.
 
 ```lua
-speedometer_units = {
---  {" Short Unit", mply_Factor, "Long Unit"},
-    {" MPS", 1, "Meter per Second"},
-    {" MPH", 2.23694, "Miles per Hour"},
-    {" KMH", 3.6, "Kilometers per Hour"},
-}
-```
-
-- The first unit, MPS, is the default unit, so it uses a multiplier of **1**.
-- The third unit, KPH, equals **3.6** times the MPS unit (because 1 kph = 3.6 mps).
-
-### Block Custom Areas
-
-Edit the `block_custom` global variable.
-
-The last line of each custom location will add a **Teleporting Position**.
-
-Instead of setting a fixed position, you can place the objects at a random generated position.  
-To do this, instead of typing the exact coordinates as shown above, use the following format:  
-`{nil, X1, X2, Y1, Y2, Z1, Z2}`
-
-- `nil` defines that the coordinates will be randomly generated within a prism, whose vertices will be specified next.
-- `X1` and `X2` define the range of coordinates for the X axis.
-- `Y1` and `Y2` define the range of coordinates for the Y axis.
-- `Z1` and `Z2` define the range of coordinates for the Z axis.
-
-And always remember, **the first value has to be the smaller one**.
-
-```lua
-block_custom = {
---  {"Example", {
---      {hash, {pos X, Y, Z}, {rot X, Y, Z}, bool_Freeze, bool_Invisible},
---      {false, {teleport_Pos X, Y, Z}, float_Heading},
---      }, },
-    {"Block Orbital Room", {
-        {3291218330, {335.9567565918, 4834.3325195312, -58.686454772949}, {0, 0, 35}, true, true},
-        {3291218330, {326.33291625977, 4827.6704101562, -60.25874710083}, {0, -90, 0}, true, true},
-        {false, {342.8, 4838.2, -57}, 121.2},
-        }, },
-    {"Trees Main LSC", {
-        {3015194288, {nil, -415, -350, -165, -97, 36, 45}, {0, 0, 0}, true, false},
-        {3015194288, {nil, -415, -350, -165, -97, 36, 45}, {0, 0, 0}, true, false},
-        {3015194288, {nil, -415, -350, -165, -97, 36, 45}, {0, 0, 0}, true, false},
-        {3015194288, {nil, -415, -350, -165, -97, 36, 45}, {0, 0, 0}, true, false},
-        {3015194288, {nil, -415, -350, -165, -97, 36, 45}, {0, 0, 0}, true, false},
-        {false, {-370.4, -104.72, 47}, -110.83449554443},
-        }, },
+shoot_entitys = {
+--  {"Name", Hash, enabled by default},
+    {'Boat', -1685705098, false},
+    {'Bumper_Car', -77393630, false},
 }
 ```
 
@@ -657,6 +617,18 @@ vehicle_spam = {
 }
 ```
 
+### Ped Spam
+
+Edit the `ped_spam` global variable.
+
+```lua
+vehicle_spam = {
+--  {"Name", Hash},
+    {'Amanda', 0x6D1E15F7},
+	  {'Prologue Driver', 0x855E36A3},
+}
+```
+
 ### SMS List
 
 Edit the `sms_texts` global variable.
@@ -688,9 +660,10 @@ weapons = {
 - Too many **Custom Vehicles / PEDs / Objects** may cause issues! Just delete them after use.
 - Some features won't work properly if the distance between you and the target is too high.
 - When the script gets autoloaded (for example, with an `autoexec.lua`), the **Event Listeners** (Chat features, etc) might not work.
-- Teleport to Waypoint will teleport you near a street.
+- Teleport to Waypoint sometimes will teleport you near a street.
 - Enabling Vehicle Colors might wont apply, press the Feature a few times.
 - Rapid Fire doesnt work with the guided rocket launcher.
+- Attachments -> Clear Entities sometimes doesnt work
 
 ## Common Questions
 
@@ -716,7 +689,7 @@ weapons = {
 
 > How do I reset the script config?
 
-- Delete the  `2Take1Script.ini` file in the  `2Take1Script_Revive\Config` folder.
+- Delete the  `config.ini` file in the  `2Take1Script` folder.
 
 > My game crashed when i load the script?
 
