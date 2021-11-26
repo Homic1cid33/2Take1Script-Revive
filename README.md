@@ -444,7 +444,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 
 ## Customize the Script
 
-In order to customize the script, you have to edit the `2Take1Script\EXTData.lua` file.
+In order to customize the script, you have to edit the `2Take1Script\Data\EXTData.lua` file.
 
 Although any text editor will do the work, I'd recommend a specialized code editor, such as **Notepad++**, **Visual Studio Code**, **Atom** or **Sublime Text**.
 
