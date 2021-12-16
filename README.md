@@ -39,40 +39,41 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Waypoint Player
 - TP to Player
 - Vehicle Options
-  - Remote Controll Vehicle
+  - Remote Control Vehicle
   - Vehicle Kick (Quick/Gentle)
+  - Vehicle Modifier (Upgrade/Performance Upgrade/Repair/Delete)
+  - Vehicle Godmode (Give and Remove)
   - Trap in Vehicle (Set on Fire/Drown Underwater)
   - Teleport Player Vehicle (To Me/Underground/Ocean/Custom Coords)
-  - Repair Vehicle
-  - Vehicle Godmode (Give and Remove)
+  - Tyre Burst Spam
   - Modify Speed (0-500)
   - Apply Random Force
 - Griefing Options
   - Radiation Lags
   - Face Fuck
+  - Airstrike
+  - Airstrike Rain
   - Ragdoll Player (v1/v2)
   - Falling Asteroids
   - Delete Asteroids
   - Trap in Stunt Tube (Visible/Invisible)
   - Trap in Cage (Visible/Invisible)
-- Attach Objects
+- Attachments
   - Attach Entity from Aim
   - Clear Entities
   - Custom Attachments
-- Log Events
-  - Log Script Events
-  - Reset Script Event Log
-  - Log Net Events
-  - Reset Net Event Log
 - Script-Events
   - Custom Script Events
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
   - Give Bounty (Custom Input, Anonymous or Named)
+  - Transaction Error Spam
+  - Force Casino Cutscene
   - Force to Island
   - Force to Mission (Several Missions Selectable)
   - CEO Options (Demiss/Terminate/Ban)
   - Passive Mode (Block/Unblock)
+  - Spam Them All
 - Send PED Assassins
   - Attack Continuously
   - Godemode Assassins
@@ -84,16 +85,22 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Spam Delay
   - Custom SMS input
   - Send their SCID & IP
-  - Send SMS from a custom presaved list
+  - SMS Spam (Presets)
+- Miscellaneous
+  - Log Script Events
+  - Reset Script Event Log
+  - Log Net Events
+  - Reset Net Event Log
+- Entity Spam (Peds/Vehicles/Objects)
+  - Amount of Entities
+  - Enable Automatic Cleanup
+  - Delete Entities
+  - Spam Entities (Custom Input)
+  - Spam Entities (Presets)
 - Malicious
   - Basic Kick
+  - Netbail Kick
   - Basic Crash
-  - Entity Spam (PEDs/Vehicles)
-    - Amount of Entites
-    - Enable Automatic Cleanup
-    - Delete Entities
-    - Spam Entities (Custom Input)
-    - Spam Entities (Presets)
   - Big Dick Crash
   - World Object Crashes (1-2)
   - Invalid Ped Crashes (1-3)
@@ -124,11 +131,14 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Crash
 - Bodyguards
   - Godmode Bodyguards
-  - Add Map Marker for Bodygaurds
-  - Bodyguards Health (100-1000000)
-  - Bodyguard Type (Presets)
+  - Disable Ragdoll
+  - Add Map Marker
+  - Teleport into own Vehicle
+  - Health (100-1000000)
+  - Ped Type (Presets)
   - Primary Weapon (Presets)
   - Secondary Weapon (Presets)
+  - Combat Behavior (Offensive/Defensive/Stationary)
   - Max Distance to Player
   - Formation
   - Amount of Bodyguards (1-7)
@@ -141,7 +151,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Teleport Personal Vehicle to me and drive
   - Drive Personal Vehicle
   - Teleport to Personal Vehicle
-- Always apply Vehicle Mods
 - Vehicle Colors
   - Set Speed in Milliseconds
   - Random Colors
@@ -170,11 +179,13 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Select Min Range
   - Select Max Range
   - Enable Horn for Player
+- License Plates
+  - 2Take1 License Plate
+  - Force License Plate Text
+  - License Plate Speedometer (MPH/KMH)
 - Set Heli Blades Speed 0-100%
 - Boost Vehicle
-- License Plate Speedometer (MPH/KMH)
 - No collision
-- Auto Repair Vehicle
 - Swap Vehicle Seat
 - Delete Current Vehicle
 - Custom Vehicles
@@ -216,9 +227,11 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Maze Bank
 - Griefing
   - Blame Player for Explosion Kills (ID)
-  - Set Explosions Invisible
-  - Set Explosions Silent
-  - Explode Lobby (Explosion Type Input)
+  - Custom Explosions
+    - Set Explosions Invisible
+    - Set Explosions Silent
+    - Set Cam Shake Intensity
+    - Explode Lobby (Explosion Type Input)
   - Explode Lobby
   - Set Lobby on Fire
   - Orbital Cannon Spam
@@ -244,14 +257,20 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - `!vehiclegod <on/off>`
     - `!weaponsall`
   - Chat Spam
+    - Anti Chat Spam (Kick/Crash)
     - Spam Delay
     - Chat Spam (Input)
+    - Spam Text from Clipboard
+    - Paste Text from Clipboard
     - Echo Chat X Times (1-10)
   - SMS Spam
     - Spam Delay
     - SMS Spam (Input)
     - Send their SCID & IP
     - SMS Spam (Presets)
+  - Punish Money Beggers
+  - Punish Russian Speakers (Kick/Crash/Explode)
+  - Geo-Block China
 - Vehicles
   - Vehicle Blacklist
     - Block Vehicles
@@ -271,6 +290,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Set Bounty after Death Value (0 - 10000$)
     - Give Bounty after Death Toggle (Anonymous or Named)
     - Give Bounty (Custom Input, Anonymous or Named)
+  - Give Never Wanted
+  - Transaction Error
+  - Force Casino Cutscene
   - Force to Island
   - Force to Mission (Several Missions Selectable)
   - CEO Options (Demiss/Terminate/Ban)
@@ -283,51 +305,30 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Notify Script Host Migrations
   - Notify Session Host Migrations
 - Malicious
-  - Karma every Script Event
   - Force Host
-  - Punish Money Beggers
-  - Punish Russian Speakers (Kick/Crash/Explode)
-  - Geo-Block China
+  - Kick Joining Players
   - Kick Session
   - Crash Session (1-2)
   - Fix loading screen after Crash
-- Player History
-    - Store info in each Lobby subcategory
-      - Lobby info
-        - Shows number of logged Players
-        - Hide Lobby from History
-      - Players
-        - NAME / Copy
-        - SCID / Copy
-        - IP / Copy
-        - PlayerID
-        - First Seen
-        - Add to Blacklist
-        - Add to Remember Modder
-        - Copy Outfit
-        - Is `<name>` in this lobby?
-        - Were they a modder?
 
 ### Weapon Options
-
-- Load Weapons
-  - Flamethrower
-    - Select Scale
-    - Normal
-    - Green
-  - Shoot Objects
-    - Enable Object Shoot
-    - Delete Objects
-    - Select Objects from a list
-  - Delete Gun
-  - Kick Gun
-  - Model Gun
-    - Standard Model Gun (PEDs)
-    - Add Objects and Vehicles to Model Gun
-  - Rapid Fire
+- Load Weapon Attachments
+- Flamethrower
+  - Select Scale
+  - Normal
+  - Green
+- Shoot Objects
+  - Enable Object Shoot
+  - Delete Objects
+  - Select Objects from a list
+- Delete Gun
+- Kick Gun
+- Model Gun
+  - Standard Model Gun (PEDs)
+  - Add Objects and Vehicles to Model Gun
+- Rapid Fire
 
 ### PTFX
-
 - New years eve
 - Sparkling Ass
 - Sparkling Tires
@@ -337,7 +338,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Fire Ass
 
 ### Modder Detection
-
 - Remember every Modder
 - Unmark Friends
 - Mark all as Modders
@@ -351,7 +351,52 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Modded Script Event
   - Profanity Filter Bypass
 
+### Stats Editor
+- Reset Orbital-Cannon Cooldown
+- Disable Orbital-Cannon Cooldown
+- Fill Snacks and Armor
+- Set KD(Kills/Deaths)
+- Unlock Xmas Liveries
+- Unlock Fast-Run Ability
+- Casino Heist
+  - Helper Tools 
+    - Remove Enemies
+    - Remove Cameras
+    - Teleport to Boards
+    - Teleport in front of Arcade
+    - Vault Teleports
+    - Teleport to Casino Entrance
+  - Reset Heist
+  - Quickstart (Random/Highest Payout)
+  - First Board
+    - Reset last Approach
+    - Unlock Points of Interests
+    - Unlock Access Points
+    - Set Approach (Silent/BigCon/Aggressive)
+    - Set Last Approach (Silent/BigCon/Aggressive)
+    - Set Target (Money/Gold/Art/Diamond)
+    - Confirm First Board
+  - Second Board
+    - Choose Gunman
+    - Choose Driver
+    - Choose Hacker
+    - Weapon Variation
+    - Vehicle Variation
+    - Remove Duggan Heavy Gurds
+    - Equip Heavy Armor
+    - Scan Card Level
+    - Confirm Second Board
+
 ### Miscellaneous
+- Delete Custom Outfits
+- Delete Custom Vehicles
+- Clear Area
+  - Clear Distance
+  - Clear Area of Cops
+  - Clear Area of PEDs
+  - Clear Area of Vehicles
+  - Clear Area of Objects
+  - Clear Everything
 - Teleport High in Air
 - Drive/Walk on the Ocean
 - Drive/Walk this Height
@@ -360,53 +405,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Auto Teleport to Waypoint
 - Auto-Hostkick-Yourself
 - Fake Ban Screen
-- Stats
-  - Reset Orbital-Cannon Cooldown
-  - Disable Orbital-Cannon Cooldown
-  - Fill Snacks and Armor
-  - Set KD(Kills/Deaths)
-  - Unlock Fast-Run Ability
-  - Casino Heist
-    - Teleport to Boards
-    - Reset Heist
-    - Quickstart Random
-    - Quickstart Highest Payout
-    - Manual Mode
-      - Reset last Approach
-      - Silent, BigCon, Aggressive
-      - Hard, Difficulty, Approach
-      - Money, Gold, Art, Diamond
-      - Unlock Points of Interests
-      - Unlock Access Points
-      - Confirm First Board
-      - Crew-Member-Weapon, Payout
-      - Crew-Member-Driver, Payout
-      - Crew-Member-Hacker, Payout
-      - Weapon Variation
-      - Vehicle Variation
-      - Remove Duggan Heavy Gurds
-      - Equip Heavy Armor
-      - Scan Card Level
-      - Mask Variation
-      - Confirm Second Board
-
-### Utility
-
-- Delete Custom Outfits
-- Delete Custom Vehicles
-- Gameplay Clear Area
-- Clear Area
-  - Clear Distance
-  - Clear Area of Cops
-  - Clear Area of PEDs
-  - Clear Area of Vehicles
-  - Clear Area of Objects
-  - Clear Everything
-- Get Current Coords
 - Leave-Session
-- Delete Entity From Aim
-- Get input Hash key
-- Print Info from Entity @Aim to File
+
+### Options
 - Console (requires lua debug console)
   - Print 2T1Script log to console
   - Print Chat log to console
@@ -427,9 +428,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Clear player.log
     - Clear script_event.log
     - Clear All Menu Logs
-
-### Options
-
 - Hotkey Settings
   - Enable Hotkeys
   - Hotkey Notifications
@@ -438,8 +436,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Print active Hotkeys
 - Exclude Friends from Harmful Lobby Events
 - Attached Entitys No Collision
-- Disable Player-History
+- Use Host-Kick for Kick Events
 - 2Take1Script Parent
+- Extended Welcome Message
 - Save Configuration
 
 ## Customize the Script
