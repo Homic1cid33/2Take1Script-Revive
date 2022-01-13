@@ -1,6 +1,6 @@
 # 2Take1Script
 
-The offical continued version of the 2Take1Script, a script made by [**haekkzer**](https://github.com/haekkzer/) who abandoned it and allowed me to take over
+The successor of [**haekkzers 2Take1Script**](https://github.com/haekkzer/2Take1Script)
 
 #### I removed the code from the github repo because people apparently dont have enough IQ to go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) and instead download the code directly which causes issues..
 
