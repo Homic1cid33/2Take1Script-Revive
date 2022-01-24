@@ -1,16 +1,16 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a bug report to help me fix issues
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
+**Description of the bug**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+**How to replicate**
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -20,11 +20,9 @@ Steps to reproduce the behavior:
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-**Screenshots / Logs**
-If applicable, add screenshots to help explain your problem.
-`%appdata%\PopstarDevs\2Take1Menu\2Take1Menu.log`
-Post the latest error message from this file. / Upload this file.
-It will help me find out whats wrong.
+**Screenshots / Videos / Logs**
+If possible, add screenshots or videos of the bug to the report or
+post the last bug related error message from `%appdata%\PopstarDevs\2Take1Menu\2Take1Menu.log` or upload the file
 
-**Additional context**
-Add any other context about the problem here.
+**Additional Info**
+Add any other Info about the problem here.
