@@ -1,20 +1,17 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Suggest a feature for this script
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Name of the feature**
+What name do you want the feature to have?
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Description of the feature**
+A clear and concise description of the reqested feature.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Additional info**
+Add any other info or screenshots about the feature request here.
