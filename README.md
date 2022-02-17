@@ -2,7 +2,7 @@
 
 The successor of [**haekkzers 2Take1Script**](https://github.com/haekkzer/2Take1Script)
 
-**I removed the code from the github repo because people apparently dont have enough IQ to go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) and instead download the code directly which causes issues..**
+**Go to [**releases**](https://github.com/DemonKiya/2Take1Script-Revive/releases) to download the latest version of the script**
 
 > Big Thanks Proddy and haekkzer himself who teached me some stuff about lua and helped me with issues!
 >
