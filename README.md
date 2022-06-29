@@ -12,4 +12,4 @@ The successor of [**haekkzers 2Take1Script**](https://github.com/haekkzer/2Take1
 
 The code is compiled to mess with people who are skidding from it.
 
-It does not contain any malicious code but if you dont trust it, dont use it. It's that easy.
+It does not contain any malicious code but if you dont trust it, leave trusted mode off or just dont use it at all. It's that easy.
