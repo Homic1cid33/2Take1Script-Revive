@@ -9,3 +9,7 @@ The successor of [**haekkzers 2Take1Script**](https://github.com/haekkzer/2Take1
 > Thanks to Barbiehunter for helping me with my tests
 
 ### [**Installation Guide, Features List and more**](https://github.com/DemonKiya/2Take1Script-Revive/wiki)
+
+The code is compiled to mess with people who are skidding from it.
+
+It does not contain any malicious code but if you dont trust it, dont use it. It's that easy.
